@@ -1,0 +1,28 @@
+/* 
+  Localizable.strings
+  DDM_ProyectoFinal_ONC_IOS
+
+  Created by Omar Nieto on 2/03/23.
+  
+*/
+
+
+"BUTTON_EDIT" = "Edit";
+"BUTTON_DONE" = "Done";
+"ALERT_TITLE_BORRAR" = "Delete" ;
+
+"ALERT_OK" = "OK" ;
+"ALERT_TITLE_VACIO" = "Field Name Empty" ;
+"ALERT_MENSSAGE_VACIO" = "The name field must not be empty" ;
+
+"ALERT_TITLE_NOT_NUMBER" = "Fields Lat and Lon error" ;
+"ALERT_MENSSAGE_NOT_NUMBER" = "The Latitude or Longitude fielda must be a number" ;
+
+"DOWNLOAD_BTN_ALERT_TITLE" = "Activate Internet";
+"DOWNLOAD_BTN_ALERT_MESSAGE" = "You must enable the Internet connection to be able to download data information";
+
+"DOWNLOAD_BTN_ALERT_TITLE2" = "Download error";
+"DOWNLOAD_BTN_ALERT_MESSAGE2" = "An error has occurred while downloading weather information";
+
+"DOWNLOAD_BTN_ALERT_TITLE3" = "Download error";
+"DOWNLOAD_BTN_ALERT_MESSAGE3" = "An error has occurred while downloading weather images";

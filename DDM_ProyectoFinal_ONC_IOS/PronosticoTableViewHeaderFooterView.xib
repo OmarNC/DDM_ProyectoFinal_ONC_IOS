@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner">
+            <connections>
+                <outlet property="imageView" destination="qqT-Z7-q2G" id="rqu-1F-RYP"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="PronosticoTableViewHeaderFooterView" customModule="DDM_ProyectoFinal_ONC_IOS" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="200"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2kz-NN-9YT">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="200"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="playa_cielo_azul.png" translatesAutoresizingMaskIntoConstraints="NO" id="qqT-Z7-q2G">
+                            <rect key="frame" x="0.0" y="0.0" width="393" height="200"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="qqT-Z7-q2G" secondAttribute="trailing" id="8pH-b1-Y5j"/>
+                        <constraint firstItem="qqT-Z7-q2G" firstAttribute="leading" secondItem="2kz-NN-9YT" secondAttribute="leading" id="NPZ-0M-Q0j"/>
+                        <constraint firstAttribute="bottom" secondItem="qqT-Z7-q2G" secondAttribute="bottom" id="bLf-0R-2HY"/>
+                        <constraint firstItem="qqT-Z7-q2G" firstAttribute="top" secondItem="2kz-NN-9YT" secondAttribute="top" id="ehT-UA-b28"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="2kz-NN-9YT" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="46a-Lc-Gcb"/>
+                <constraint firstItem="2kz-NN-9YT" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="PLg-2L-5qI"/>
+                <constraint firstAttribute="bottom" secondItem="2kz-NN-9YT" secondAttribute="bottom" id="VT7-sT-cyX"/>
+                <constraint firstAttribute="trailing" secondItem="2kz-NN-9YT" secondAttribute="trailing" id="zct-8t-Ym0"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="63" y="-11"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="playa_cielo_azul.png" width="245.75999450683594" height="161.52000427246094"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
