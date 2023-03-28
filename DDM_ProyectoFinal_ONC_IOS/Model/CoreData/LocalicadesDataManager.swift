@@ -38,8 +38,8 @@ class LocalidadesDataManager {
         return LocalidadesDataManager.localidadSelected
     }
     
-    func getLocalidad(at index: Int) -> Localidad {
-        
+    func getLocalidad(at index: Int) -> Localidad? {
+        if index < 0 || index >= localidades.count {return nil}
         return localidades[index]
     }
     

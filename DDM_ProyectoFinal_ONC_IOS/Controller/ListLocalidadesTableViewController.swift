@@ -38,9 +38,9 @@ class ListLocalidadesTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "ListLocalidadesTableViewCell", for: indexPath) as! ListLocalidadesTableViewCell
         
-        cell.countryLabel.text = dataManager?.getLocalidad(at: indexPath.row).name
-        cell.descriptionLabel.text = dataManager?.getLocalidad(at: indexPath.row).descripcion
-        cell.arrowImageView.isHidden = !(dataManager?.getLocalidad(at: indexPath.row).selected ?? false)
+        cell.countryLabel.text = dataManager?.getLocalidad(at: indexPath.row)?.name
+        cell.descriptionLabel.text = dataManager?.getLocalidad(at: indexPath.row)?.descripcion
+        cell.arrowImageView.isHidden = !(dataManager?.getLocalidad(at: indexPath.row)?.selected ?? false)
 
 
         return cell

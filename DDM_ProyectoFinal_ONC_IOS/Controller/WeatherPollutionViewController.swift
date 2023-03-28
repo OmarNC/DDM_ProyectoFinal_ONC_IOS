@@ -161,6 +161,7 @@ class WeatherPollutionViewController: UIViewController {
 extension WeatherPollutionViewController: UpdateDataDelegate{
     
     func updataData(at: Int) {
+        localidadesDataManager?.fetch()
         var updateData = false
         let newLocalidadIndex = localidadesDataManager?.getIndexLocalidadSelected() ?? -1
         if newLocalidadIndex >= 0 {
