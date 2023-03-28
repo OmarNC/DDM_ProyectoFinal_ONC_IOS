@@ -1,0 +1,273 @@
+
+/* Class = "UILabel"; text = "Lat:"; ObjectID = "0ka-bJ-HFS"; */
+"0ka-bJ-HFS.text" = "Lat:";
+
+/* Class = "UIButton"; configuration.title = "Salvar"; ObjectID = "1XN-4E-Eqm"; */
+"1XN-4E-Eqm.configuration.title" = "Salvar";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "1XN-4E-Eqm"; */
+"1XN-4E-Eqm.normalTitle" = "Botón";
+
+/* Class = "UILabel"; text = "temp"; ObjectID = "1aN-dr-84W"; */
+"1aN-dr-84W.text" = "temp";
+
+/* Class = "UILabel"; text = "Rain"; ObjectID = "1aO-GW-QF9"; */
+"1aO-GW-QF9.text" = "Lluvia";
+
+/* Class = "UILabel"; text = "Pais:"; ObjectID = "1lV-zR-zE1"; */
+"1lV-zR-zE1.text" = "Pais:";
+
+/* Class = "UILabel"; text = "Estado:"; ObjectID = "2do-al-ajQ"; */
+"2do-al-ajQ.text" = "Estado:";
+
+/* Class = "UITextField"; placeholder = "Required"; ObjectID = "2eq-dA-9CV"; */
+"2eq-dA-9CV.placeholder" = "REquerido";
+
+/* Class = "UILabel"; text = "Desc"; ObjectID = "2nZ-BB-Dpv"; */
+"2nZ-BB-Dpv.text" = "Desc";
+
+/* Class = "UIBarButtonItem"; title = "Select"; ObjectID = "3Ho-Ik-Po6"; */
+"3Ho-Ik-Po6.title" = "Seleccionar";
+
+/* Class = "UIBarButtonItem"; title = "Select"; ObjectID = "3TF-C4-zal"; */
+"3TF-C4-zal.title" = "Seleccionar";
+
+/* Class = "UILabel"; text = "Pressure"; ObjectID = "45j-42-mR0"; */
+"45j-42-mR0.text" = "Presión";
+
+/* Class = "UILabel"; text = "Lon"; ObjectID = "48O-hk-ojI"; */
+"48O-hk-ojI.text" = "Lon";
+
+/* Class = "UITabBarItem"; title = "Tiempo"; ObjectID = "4c4-cM-nJ7"; */
+"4c4-cM-nJ7.title" = "Tiempo";
+
+/* Class = "UITextField"; placeholder = "Reuired"; ObjectID = "53Y-p1-DC0"; */
+"53Y-p1-DC0.placeholder" = "REquerido";
+
+/* Class = "UITabBarItem"; title = "Localidades"; ObjectID = "5Nh-Qm-Fjc"; */
+"5Nh-Qm-Fjc.title" = "Localidades";
+
+/* Class = "UILabel"; text = "Main"; ObjectID = "5mV-Uf-FrJ"; */
+"5mV-Uf-FrJ.text" = "Principal";
+
+/* Class = "UILabel"; text = "PM2.5"; ObjectID = "5wb-12-eY3"; */
+"5wb-12-eY3.text" = "PM2.5";
+
+/* Class = "UILabel"; text = "press"; ObjectID = "6a5-p7-Upz"; */
+"6a5-p7-Upz.text" = "press";
+
+/* Class = "UILabel"; text = "Monoxido de carbono (CO)"; ObjectID = "7qa-Ua-qEN"; */
+"7qa-Ua-qEN.text" = "Monoxido de carbono (CO)";
+
+/* Class = "UILabel"; text = "Localidades"; ObjectID = "9co-cd-qWV"; */
+"9co-cd-qWV.text" = "Localidades";
+
+/* Class = "UIBarButtonItem"; title = "Edit"; ObjectID = "A8i-wa-2Fz"; */
+"A8i-wa-2Fz.title" = "Editar";
+
+/* Class = "UILabel"; text = "Selecciona una localidad"; ObjectID = "Anb-pV-fp0"; */
+"Anb-pV-fp0.text" = "Selecciona una localidad";
+
+/* Class = "UILabel"; text = "Calidad del aire"; ObjectID = "DUB-dA-gX6"; */
+"DUB-dA-gX6.text" = "Calidad del aire";
+
+/* Class = "UILabel"; text = "City"; ObjectID = "EMu-MB-xm1"; */
+"EMu-MB-xm1.text" = "Ciuada";
+
+/* Class = "UILabel"; text = "Estado:"; ObjectID = "ExS-nM-qnq"; */
+"ExS-nM-qnq.text" = "Estado:";
+
+/* Class = "UILabel"; text = "Dioxido de nitrógeno (NO2)"; ObjectID = "F43-lo-Tqr"; */
+"F43-lo-Tqr.text" = "Dioxido de nitrógeno (NO2)";
+
+/* Class = "UILabel"; text = "temp"; ObjectID = "FKA-dV-un7"; */
+"FKA-dV-un7.text" = "temp";
+
+/* Class = "UILabel"; text = "CO"; ObjectID = "Fly-dg-A49"; */
+"Fly-dg-A49.text" = "CO";
+
+/* Class = "UILabel"; text = "No hay información"; ObjectID = "FrD-xm-c77"; */
+"FrD-xm-c77.text" = "No hay información";
+
+/* Class = "UILabel"; text = "Pais:"; ObjectID = "GhZ-Oe-IhG"; */
+"GhZ-Oe-IhG.text" = "Pais:";
+
+/* Class = "UILabel"; text = "City"; ObjectID = "Hzf-fV-h3V"; */
+"Hzf-fV-h3V.text" = "Ciudad";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "ITl-41-xER"; */
+"ITl-41-xER.normalTitle" = "Botón";
+
+/* Class = "UILabel"; text = "Date"; ObjectID = "JSb-Mm-2hc"; */
+"JSb-Mm-2hc.text" = "Fecha";
+
+/* Class = "UITabBarItem"; title = "Pronóstico"; ObjectID = "NTi-ix-HjR"; */
+"NTi-ix-HjR.title" = "Pronóstico";
+
+/* Class = "UILabel"; text = "Rain"; ObjectID = "OPf-gh-erM"; */
+"OPf-gh-erM.text" = "Lluvia";
+
+/* Class = "UILabel"; text = "MainDes"; ObjectID = "PKe-5p-bcL"; */
+"PKe-5p-bcL.text" = "MainDes";
+
+/* Class = "UILabel"; text = "Humidity"; ObjectID = "Q2b-ym-gj3"; */
+"Q2b-ym-gj3.text" = "Humedad";
+
+/* Class = "UILabel"; text = "Date"; ObjectID = "Q5t-Va-BtN"; */
+"Q5t-Va-BtN.text" = "Fecha";
+
+/* Class = "UITextField"; placeholder = "Country"; ObjectID = "QRr-Jy-2Em"; */
+"QRr-Jy-2Em.placeholder" = "Pais";
+
+/* Class = "UILabel"; text = "Date"; ObjectID = "S4P-hD-pK8"; */
+"S4P-hD-pK8.text" = "Feha";
+
+/* Class = "UILabel"; text = "main fgdfgdfgdfgdf d fg"; ObjectID = "UNa-Wr-Lrn"; */
+"UNa-Wr-Lrn.text" = "main fgdfgdfgdfgdf d fg";
+
+/* Class = "UILabel"; text = "Partículas finas (PM2.5)"; ObjectID = "V1f-Kh-h8j"; */
+"V1f-Kh-h8j.text" = "Partículas finas (PM2.5)";
+
+/* Class = "UITextField"; placeholder = "Reuired"; ObjectID = "VAk-cY-0f0"; */
+"VAk-cY-0f0.placeholder" = "REquerido";
+
+/* Class = "UILabel"; text = "Name:"; ObjectID = "Vho-cM-bD7"; */
+"Vho-cM-bD7.text" = "Nombre:";
+
+/* Class = "UILabel"; text = "Description:"; ObjectID = "Vqn-ST-lkI"; */
+"Vqn-ST-lkI.text" = "Descripción:";
+
+/* Class = "UILabel"; text = "Pais"; ObjectID = "Vsr-gt-wcK"; */
+"Vsr-gt-wcK.text" = "Pais";
+
+/* Class = "UILabel"; text = "NO2"; ObjectID = "WU5-YN-W5F"; */
+"WU5-YN-W5F.text" = "NO2";
+
+/* Class = "UILabel"; text = "hum"; ObjectID = "WUG-Cv-knR"; */
+"WUG-Cv-knR.text" = "hum";
+
+/* Class = "UILabel"; text = "tempMinMax"; ObjectID = "WUw-Tt-Rng"; */
+"WUw-Tt-Rng.text" = "tempMinMax";
+
+/* Class = "UILabel"; text = "rain"; ObjectID = "Wmx-mt-TxR"; */
+"Wmx-mt-TxR.text" = "rain";
+
+/* Class = "UILabel"; text = "tempMaxMin"; ObjectID = "XJP-u6-pV7"; */
+"XJP-u6-pV7.text" = "tempMaxMin";
+
+/* Class = "UILabel"; text = "Humidity"; ObjectID = "XQb-oM-ID5"; */
+"XQb-oM-ID5.text" = "Humidity";
+
+/* Class = "UILabel"; text = "Lat"; ObjectID = "XqF-Ew-Nml"; */
+"XqF-Ew-Nml.text" = "Lat";
+
+/* Class = "UILabel"; text = "rain"; ObjectID = "ZJj-Fc-Cic"; */
+"ZJj-Fc-Cic.text" = "Lluvia";
+
+/* Class = "UILabel"; text = "Ozono (O3)"; ObjectID = "ZRW-b2-6Ql"; */
+"ZRW-b2-6Ql.text" = "Ozono (O3)";
+
+/* Class = "UILabel"; text = "Cloud"; ObjectID = "Zu8-Eg-9pA"; */
+"Zu8-Eg-9pA.text" = "Nubes";
+
+/* Class = "UIButton"; configuration.title = "Buscar"; ObjectID = "dMb-cv-UVO"; */
+"dMb-cv-UVO.configuration.title" = "Buscar";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "dMb-cv-UVO"; */
+"dMb-cv-UVO.normalTitle" = "Boton";
+
+/* Class = "UILabel"; text = "Estado"; ObjectID = "eIf-sM-Tvl"; */
+"eIf-sM-Tvl.text" = "Estado";
+
+/* Class = "UILabel"; text = "Description"; ObjectID = "enp-ih-PD5"; */
+"enp-ih-PD5.text" = "Descripción";
+
+/* Class = "UILabel"; text = "Dióxido de azufre (SO2)"; ObjectID = "eth-Mh-I6i"; */
+"eth-Mh-I6i.text" = "Dióxido de azufre (SO2)";
+
+/* Class = "UILabel"; text = "No hay localidades"; ObjectID = "f4r-GD-ifj"; */
+"f4r-GD-ifj.text" = "No hay localidades";
+
+/* Class = "UILabel"; text = "Lon:"; ObjectID = "fcV-Hd-Hjl"; */
+"fcV-Hd-Hjl.text" = "Lon:";
+
+/* Class = "UILabel"; text = "PM10"; ObjectID = "g0O-Pk-UJb"; */
+"g0O-Pk-UJb.text" = "PM10";
+
+/* Class = "UILabel"; text = "Description"; ObjectID = "gSd-Vl-yND"; */
+"gSd-Vl-yND.text" = "Descripción";
+
+/* Class = "UILabel"; text = "Wind"; ObjectID = "gwN-y8-16c"; */
+"gwN-y8-16c.text" = "Viento";
+
+/* Class = "UILabel"; text = "Partículas guesas (PM10)"; ObjectID = "hNM-cX-k8M"; */
+"hNM-cX-k8M.text" = "Partículas guesas (PM10)";
+
+/* Class = "UITextField"; placeholder = "Buscar..."; ObjectID = "iJ3-vS-SPA"; */
+"iJ3-vS-SPA.placeholder" = "Buscar...";
+
+/* Class = "UITextField"; placeholder = "State"; ObjectID = "jHB-NS-iTe"; */
+"jHB-NS-iTe.placeholder" = "Estado";
+
+/* Class = "UIBarButtonItem"; title = "Select"; ObjectID = "kGs-aO-G94"; */
+"kGs-aO-G94.title" = "Seleccionar";
+
+/* Class = "UILabel"; text = "hum"; ObjectID = "l3R-h1-USO"; */
+"l3R-h1-USO.text" = "hum";
+
+/* Class = "UITabBarItem"; title = "Pollution"; ObjectID = "l6d-TD-HXy"; */
+"l6d-TD-HXy.title" = "Polución";
+
+/* Class = "UILabel"; text = "SO2"; ObjectID = "lBV-Zk-89f"; */
+"lBV-Zk-89f.text" = "SO2";
+
+/* Class = "UIBarButtonItem"; title = "Nav"; ObjectID = "lpJ-Ma-t0z"; */
+"lpJ-Ma-t0z.title" = "Nav";
+
+/* Class = "UILabel"; text = "Pronóstico de tiempo"; ObjectID = "lvd-fW-RFd"; */
+"lvd-fW-RFd.text" = "Pronóstico de tiempo";
+
+/* Class = "UILabel"; text = "Temp"; ObjectID = "myd-Ee-Y2q"; */
+"myd-Ee-Y2q.text" = "Temp";
+
+/* Class = "UILabel"; text = "Wind"; ObjectID = "nUa-C7-AuK"; */
+"nUa-C7-AuK.text" = "Viento";
+
+/* Class = "UITextField"; placeholder = "Description"; ObjectID = "nX9-lT-O34"; */
+"nX9-lT-O34.placeholder" = "Descripción";
+
+/* Class = "UIBarButtonItem"; title = "Select"; ObjectID = "onY-Ga-Up2"; */
+"onY-Ga-Up2.title" = "Seleccionas";
+
+/* Class = "UILabel"; text = "Pressure"; ObjectID = "qia-9i-c8P"; */
+"qia-9i-c8P.text" = "Pressión";
+
+/* Class = "UILabel"; text = "surise/sunset"; ObjectID = "rbk-EV-HEl"; */
+"rbk-EV-HEl.text" = "salida/puesta";
+
+/* Class = "UILabel"; text = "Description"; ObjectID = "sbW-n0-iXl"; */
+"sbW-n0-iXl.text" = "Descripción";
+
+/* Class = "UILabel"; text = "rain"; ObjectID = "su0-CY-u2m"; */
+"su0-CY-u2m.text" = "Lluvia";
+
+/* Class = "UILabel"; text = "Clouds"; ObjectID = "tcV-K6-IuJ"; */
+"tcV-K6-IuJ.text" = "Nubes";
+
+/* Class = "UILabel"; text = "Country"; ObjectID = "ubP-8r-7w2"; */
+"ubP-8r-7w2.text" = "País";
+
+/* Class = "UILabel"; text = "press"; ObjectID = "upw-FQ-pbG"; */
+"upw-FQ-pbG.text" = "Presión";
+
+/* Class = "UILabel"; text = "Latitude:"; ObjectID = "x51-aU-vWM"; */
+"x51-aU-vWM.text" = "Latitud:";
+
+/* Class = "UILabel"; text = "Country"; ObjectID = "xtu-vt-uFJ"; */
+"xtu-vt-uFJ.text" = "Pais";
+
+/* Class = "UITabBarController"; title = "Clima"; ObjectID = "y8K-O6-6c4"; */
+"y8K-O6-6c4.title" = "Clima";
+
+/* Class = "UILabel"; text = "Longitude:"; ObjectID = "zDV-QD-iIM"; */
+"zDV-QD-iIM.text" = "Longitud:";

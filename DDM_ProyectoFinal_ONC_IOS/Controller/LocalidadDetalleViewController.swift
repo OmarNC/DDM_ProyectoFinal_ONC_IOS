@@ -8,6 +8,7 @@
 
 
 import UIKit
+import CoreData
 
 class LocalidadDetalleViewController: UIViewController {
     
@@ -33,7 +34,7 @@ class LocalidadDetalleViewController: UIViewController {
 
         
         if localidad != nil {
-            updateView()
+            updateView(locality: localidad)
         }
         else { //Si es una nueva tarea, se coloca el cursor en el primer textfield
             nameTextField.becomeFirstResponder()
@@ -48,15 +49,15 @@ class LocalidadDetalleViewController: UIViewController {
     }
     
 
-    func updateView()
+    func updateView(locality: Localidad?)
     {
-        if localidad != nil{
-            nameTextField.text = localidad?.name
-            descriptionTextField.text = localidad?.descripcion
-            stateTextField.text = localidad?.state
-            countryTextField.text = localidad?.country
-            latitudeTextField.text = "\(String(describing: localidad?.latitude))"
-            longitudeTextField.text = "\(String(describing: localidad?.longitude))"
+        if locality != nil{
+            nameTextField.text = locality?.name
+            descriptionTextField.text = locality?.descripcion
+            stateTextField.text = locality?.state
+            countryTextField.text = locality?.country
+            latitudeTextField.text = "\(String(format: "%f",locality!.latitude))"
+            longitudeTextField.text = "\(String(format: "%f",  locality!.longitude))"
             
             
         }
@@ -80,7 +81,7 @@ class LocalidadDetalleViewController: UIViewController {
     // MARK: - Navigation
     
     
-    //Se agrega esta rutina para verificar si el viewController
+    //Se agrega esta rutina para verificar si el viewController es modal
     func isModal() -> Bool {
         let presentingIsModal = presentingViewController != nil
         let presentingIsNavigation = navigationController?.presentingViewController?.presentedViewController == navigationController
@@ -97,7 +98,6 @@ class LocalidadDetalleViewController: UIViewController {
     
     private func salir()
     {
-        
         if self.isModal() {
             dismiss(animated: true)
         }
@@ -108,32 +108,63 @@ class LocalidadDetalleViewController: UIViewController {
     
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        //let destino = segue.destination as! TableViewController
-        updateData()
+        
+        if (segue.destination is MapSearchViewController){
+            let mapViewController =  segue.destination as! MapSearchViewController
+            if !isModal() { // Se está modificando una localidad
+                mapViewController.localidad = localidad
+            }
+        }
+        else {
+            updateData()
+        }
+        
     }
     
     
     override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
         
         var perform = false
-        let camposNoEmpty = Helper.validateText(text: nameTextField.text!) &&
-                            Helper.validateText(text: latitudeTextField.text!) &&
-                            Helper.validateText(text: longitudeTextField.text!)
-        let camposNumbers = Helper.validateTextNumeber(text: latitudeTextField.text!) &&
-                            Helper.validateTextNumeber(text: longitudeTextField.text!)
         
-        if camposNoEmpty == false {
-            Helper.AlertMessageOk(title: NSLocalizedString("ALERT_TITLE_VACIO", comment: "ALERT_TITLE_VACIO"), message: NSLocalizedString("ALERT_MENSSAGE_VACIO", comment: "ALERT_MENSSAGE_VACIO"), viewController: self)
+        if identifier == "BuscarLocalidadSegue" {
+            perform = true
         }
-        else if camposNumbers == false {
-            Helper.AlertMessageOk(title: NSLocalizedString("ALERT_TITLE_NOT_NUMBER", comment: "ALERT_TITLE_NOT_NUMBER"), message: NSLocalizedString("ALERT_MENSSAGE_NOT_NUMBER", comment: "ALERT_MENSSAGE_NOT_NUMBER"), viewController: self)
-        }
-        else { perform = true }
+        else {
             
+            let camposNoEmpty = Helper.validateText(text: nameTextField.text!) &&
+            Helper.validateText(text: latitudeTextField.text!) &&
+            Helper.validateText(text: longitudeTextField.text!)
+            let camposNumbers = Helper.validateTextNumeber(text: latitudeTextField.text!) &&
+            Helper.validateTextNumeber(text: longitudeTextField.text!)
+            
+            if camposNoEmpty == false {
+                Helper.AlertMessageOk(title: NSLocalizedString("ALERT_TITLE_VACIO", comment: "ALERT_TITLE_VACIO"), message: NSLocalizedString("ALERT_MENSSAGE_VACIO", comment: "ALERT_MENSSAGE_VACIO"), viewController: self)
+            }
+            else if camposNumbers == false {
+                Helper.AlertMessageOk(title: NSLocalizedString("ALERT_TITLE_NOT_NUMBER", comment: "ALERT_TITLE_NOT_NUMBER"), message: NSLocalizedString("ALERT_MENSSAGE_NOT_NUMBER", comment: "ALERT_MENSSAGE_NOT_NUMBER"), viewController: self)
+            }
+            else { perform = true }
+        }
+        
         return perform
     }
     
     
+    
+    //Segue ejecutado cuando el MapBuscarViewController aprieta el botón save
+    @IBAction func unwindFromDetail(segue: UIStoryboardSegue)
+    {
+        
+        if (segue.source is MapSearchViewController) {
+            let mapViewController = segue.source as! MapSearchViewController
+            
+            if let localidaMapa = mapViewController.localidad {
+
+                updateView(locality: localidaMapa)
+            }
+           
+        }
+    }
     
     
     

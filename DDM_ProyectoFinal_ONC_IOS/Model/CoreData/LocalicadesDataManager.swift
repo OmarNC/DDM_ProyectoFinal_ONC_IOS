@@ -11,23 +11,48 @@ import CoreData
 class LocalidadesDataManager {
     private var localidades : [Localidad] = []
     private var context : NSManagedObjectContext
+    private static var localidadSelected = -1
     
     init(context: NSManagedObjectContext) {
         self.context = context
+        fetch()
     }
+    
     
     func fetch(){
         do{
             self.localidades = try self.context.fetch(Localidad.fetchRequest())
+            //inicializa la localidad seleccionada
+            for (index, loc) in localidades.enumerated() {
+                if loc.selected == true {
+                    LocalidadesDataManager.localidadSelected = index
+                }
+            }
         }
         catch{
             print("ERROR: No se ha podido leer la base de datos")
         }
     }
     
+    func getIndexLocalidadSelected() -> Int {
+        return LocalidadesDataManager.localidadSelected
+    }
+    
     func getLocalidad(at index: Int) -> Localidad {
         
         return localidades[index]
+    }
+    
+    func checkedLocalidad(at index: Int)
+    {
+        let prevIndex = LocalidadesDataManager.localidadSelected
+        if (prevIndex >= 0) {
+            localidades[prevIndex].selected = false
+        }
+        LocalidadesDataManager.localidadSelected = index
+        localidades[index].selected = true
+        saveData()
+        fetchData()
     }
     
     func setLocalidad(localidad: Localidad, at index: Int)
@@ -45,6 +70,10 @@ class LocalidadesDataManager {
     
     
     func deleteLocalidad(at indice: Int) {
+        let prevIndex = LocalidadesDataManager.localidadSelected
+        if (prevIndex == indice) {
+            LocalidadesDataManager.localidadSelected = -1
+        }
         deleteLocalidad(localidad: localidades[indice])
     }
     

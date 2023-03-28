@@ -4,30 +4,25 @@
 //
 //  Created by Omar Nieto on 20/03/23.
 //
-// This file was generated from JSON Schema using quicktype, do not modify it directly.
-// To parse the JSON, add this file to your project and do:
-//
-//   let weatherPollution = try? JSONDecoder().decode(WeatherPollution.self, from: jsonData)
 
 import Foundation
 
 // MARK: - WeatherPollution
-/*
+
 struct WeatherPollution: Codable {
-    let coord: [Int]
-    let list: [List]
+    let coord: Coord
+    let list: [ListPollution]
 }
 
 // MARK: - List
-struct List: Codable {
+struct ListPollution: Codable {
     let dt: Int
-    let main: Main
+    let main: MainPollution
     let components: [String: Double]
 }
 
 // MARK: - Main
-struct Main: Codable {
+struct MainPollution: Codable {
     let aqi: Int
 }
 
-*/

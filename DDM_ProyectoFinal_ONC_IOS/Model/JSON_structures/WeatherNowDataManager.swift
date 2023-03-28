@@ -1,15 +1,15 @@
 //
-//  WeatherForecastDataManager.swift
+//  WeatherNowDataManager.swift
 //  DDM_ProyectoFinal_ONC_IOS
 //
-//  Created by Omar Nieto on 24/03/23.
+//  Created by Omar Nieto on 26/03/23.
 //
 
 import Foundation
 
 
-class WeatherForecastDataManager {
-    private var weatherForecast : WeatherForecast? = nil
+class WeatherNowDataManager {
+    private var weatherNow : WeatherNow? = nil
     private var localidad: Localidad? = nil
     private var responseFunctions: ResponseToGetJSONDelegate
    //private var viewController: UIViewController? = nil
@@ -22,7 +22,7 @@ class WeatherForecastDataManager {
         
         if localidad == nil { return }
         
-        let strUrl = ConnectionURL.getURLWeatherForecast(lat: localidad!.latitude, lon: localidad!.longitude)
+        let strUrl = ConnectionURL.getURLWeather(lat: localidad!.latitude, lon: localidad!.longitude)
         print("URL: \(strUrl)")
         
         if MonitorRed.instance.conexionActiva == false {
@@ -32,13 +32,7 @@ class WeatherForecastDataManager {
                 self.responseFunctions.networkUnavailableAction()
             }
             
-            /*
-            let view = viewController as!  UITableViewController
-            
-            Helper.AlertMessageOk(title: NSLocalizedString("DOWNLOAD_BTN_ALERT_TITLE", comment: "DOWNLOAD_BTN_ALERT_TITLE"), message: NSLocalizedString("DOWNLOAD_BTN_ALERT_MESSAGE", comment: "DOWNLOAD_BTN_ALERT_MESSAGE"), viewController: view)
-             */
-            
-            print("AVISO: No se tiene una conexión a Internet")
+            print("AVISO: No se tiene una conexión a Internet activa")
             return
         }
         if MonitorRed.instance.conexionActiva == true {
@@ -63,10 +57,6 @@ class WeatherForecastDataManager {
                             self.responseFunctions.requestFailedAction(error: error!)
                         }
                         
-                        /*
-                         let view = viewController as!  UITableViewController
-                        Helper.AlertMessageOk(title: NSLocalizedString("DOWNLOAD_BTN_ALERT_TITLE2", comment: "DOWNLOAD_BTN_ALERT_TITLE2"), message: NSLocalizedString("DOWNLOAD_BTN_ALERT_MESSAGE2", comment: "DOWNLOAD_BTN_ALERT_MESSAGE2"), viewController: view)
-                        */
                         print("ERROR: al descargar el pronóstico: \(String(describing:error))")
                         return
                     }
@@ -74,14 +64,12 @@ class WeatherForecastDataManager {
                     do {
                         guard let data = bytes else { return }
                         //Se guarda la información recabada
-                        self.weatherForecast = try JSONDecoder().decode(WeatherForecast.self, from: data)
+                        self.weatherNow = try JSONDecoder().decode(WeatherNow.self, from: data)
                         
                         DispatchQueue.main.async {
                             //Se deja al delegado actuar cuando ha tenido exito en la obtención del recurso
                             self.responseFunctions.responseComplationHandler()
-                            /*
-                            view.tableView.reloadData()
-                             */
+                         
                         }
                     }
                     catch {
@@ -111,23 +99,9 @@ class WeatherForecastDataManager {
         return localidad
     }
     
-    func getPronostico(at index: Int) -> WeatherForecastItem? {
+    func getWeather() -> WeatherNow? {
         
-        if (weatherForecast == nil || localidad == nil) { return nil}
-        return weatherForecast?.list[index]
+        if (weatherNow == nil || localidad == nil) { return nil}
+        return weatherNow
     }
-    
-
-    func countPronosticos() -> Int {
-        return weatherForecast?.list.count ?? 0
-    }
-    
-     func getPronosticos() -> [WeatherForecastItem]{
-        
-        let array: [WeatherForecastItem] = []
-        return weatherForecast?.list ?? array
-    }
-    
-    
-    
 }

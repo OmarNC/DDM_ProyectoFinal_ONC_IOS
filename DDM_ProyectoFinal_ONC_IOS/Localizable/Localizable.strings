@@ -11,6 +11,12 @@
 "BUTTON_DONE" = "Done";
 "ALERT_TITLE_BORRAR" = "Delete" ;
 
+"ALERT_ACEPT" = "ACEPT" ;
+"ALERT_CANCEL" = "CANCEL" ;
+
+"ALERT_TITLE_CHANGE" = "Location change" ;
+"ALERT_MENSSAGE_CHANGE" = "The cocation will be changed" ;
+
 "ALERT_OK" = "OK" ;
 "ALERT_TITLE_VACIO" = "Field Name Empty" ;
 "ALERT_MENSSAGE_VACIO" = "The name field must not be empty" ;
@@ -26,3 +32,13 @@
 
 "DOWNLOAD_BTN_ALERT_TITLE3" = "Download error";
 "DOWNLOAD_BTN_ALERT_MESSAGE3" = "An error has occurred while downloading weather images";
+
+"MAPA_PIN_TITLE_DEFAULT" = "Current location";
+
+"ALERT_TITLE_ACTIVAR_GPS" = "Activar GPS" ;
+"ALERT_MENSSAGE_ACTIVAR_GPS" = "Deseas abrir las configuración para activar la geolocalización";
+
+"ALERT_TITLE_LOCALIDAD_NOT_FOUND" = "Location not found" ;
+"ALERT_MENSSAGE_LOCALIDAD_NOT_FOUND" = "Location not found, please try again" ;
+
+
